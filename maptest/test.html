@@ -16,9 +16,20 @@
         height: 300px;
       }
     </style>
+
+    <script src="./JSON_readwrite.js"></script>
+
     <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript">
+      
+      var testreq = new XMLHttpRequest();
+      testreq.open('GET', './test.json');
+      storePos = function(pos){
+        posstr = (10 + " " + 20)
+        testreq.send(posstr);
+      }
+
       var map;
 
       var lat = 37.734849;
@@ -31,11 +42,14 @@
         success = true;
         map.setCenter(new google.maps.LatLng(lat, lon));
         panorama.setPosition(new google.maps.LatLng(lat, lon));
+
       }
 
       errfunc = function() {success = false;}
 
       function initialize() {
+        storePos(10);
+
         var myOptions = {
           zoom: 20,
           center: new google.maps.LatLng(lat, lon),
