@@ -1,0 +1,17 @@
+** how to mount a cd (that is a connected device/virtual device) in ubuntu server
+
+1. find the device in /dev
+   ls /dev | grep cdrom
+2. make the dir you want to mount to
+   mkdir /mnt/test
+3. mount it
+   mount -t auto /dev/cdrom /mnt/test
+
+
+** in windows, starting a vm in headless (background) mode
+
+1. List vms
+VBoxManage list vms
+
+2. start
+vboxmanage startvm [vmname] --type headless
