@@ -36,7 +36,7 @@ if (($_FILES["file"]["type"] == "application/pdf")
       {
       move_uploaded_file($_FILES["file"]["tmp_name"],
       "upload/" . $id); 
-      echo "<a href='http://mailerdemon.com/fresume/" . $id . "'>Resume Link</a>";
+      echo "<a href='http://www.fresu.me/" . $id . "'>fresu.me/".$id."</a>";
       }
     }
   }
