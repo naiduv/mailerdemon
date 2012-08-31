@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !/$
+RewriteCond %{REQUEST_FILENAME} !index.html$
+RewriteCond %{REQUEST_FILENAME} !logo.png$
+RewriteCond %{REQUEST_FILENAME} !upload_file.php$
+RewriteRule ^([A-Za-z0-9-]+)$ /f/upload/$1 [L]
