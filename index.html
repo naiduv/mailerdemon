@@ -5,6 +5,11 @@ body p {
 	font-size: 18px;
 	font-weight: normal;
 }
+
+#logo{
+  z-index:-11;
+}
+
 </style>
 <head>
 <script type="text/javascript">
@@ -20,23 +25,29 @@ body p {
   })();
 
 </script>
+<script src="https://raw.github.com/mrdoob/three.js/master/build/three.min.js"></script>
+<script src="./webgltest.js"></script>
 </head>
 
 <body>
-<center><img src="./mailerdemon.png" width="620" height="170"></center>
-<p>&nbsp;</p>
+<canvas id="canvas" style="position:absolute; top:0%"></canvas>
+<img src="./mailerdemon.png" id="logo" width="620" height="170" style="position:absolute;left:24%;height:24%; width:50%"></img>
+
+
+<div style="position:absolute; top:30%; left:20%">
 <p><a href="http://www.fresu.me">Fresu.me</a> The Free Resume Portal</p>
 <p><a href="./Team-capturetheflag-Js">Team Capture the Flag</a> A Team based Multiplayer 2d RTS/Shooter</p>
 <p><a href="./flipnews">Flip News</a>  A news reader, with a twist.</p>
 <p>A <a href="./moonlander/test.html">Moon Lander</a> game written in javascript</p>
-
 <p>An example for <a href="./maptest/test.html">Google maps</a>, gets your location and displays it in a few views</p>
-<p>&nbsp;</p>
+
+
+
 
 <p>Le <a href="http://github.com/naiduv">me</a></p>
 <p>Le <a href="http://fresu.me/venkat">resume</a></p>
 <p><a href="http://www.linkedin.com/pub/venkat-naidu/3b/566/a86">Linkedin</a></p>
+</div>
 
-<p>&nbsp;</p>
 </body>
 </html>
