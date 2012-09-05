@@ -44,16 +44,16 @@ function animate() {
         mesh[i].rotation.x += 0.06;
         mesh[i].rotation.y += 0.02;
 
-        if(ypos==400) ydir = -1;
-        if(ypos==-400) ydir = 1;
+        if(ypos==200) ydir = -1;
+        if(ypos==-200) ydir = 1;
         ypos += ydir;
 
-        if(zpos==100) zdir = -1;
-        if(zpos==-100) zdir = 1;
+        if(zpos==200) zdir = -1;
+        if(zpos==-200) zdir = 1;
         zpos += zdir;
 
-        if(xpos==400) xdir = -1;
-        if(xpos==-400) xdir = 1;
+        if(xpos==300) xdir = -1;
+        if(xpos==-300) xdir = 1;
         xpos += xdir;
 
         mesh[i].position = new THREE.Vector3(10*(i+1)+xpos,ypos,zpos);
