@@ -15,16 +15,16 @@ window.onload = function() {
 window.onkeydown = function(e) {
     switch(e.keyCode){
         case 37:
-            camera.position.x-=6;
+            camera.position.x-=8;
             break;
         case 38:
-            camera.position.y+=6;
+            camera.position.y+=8;
             break;
         case 39:
-            camera.position.x+=6;
+            camera.position.x+=8;
             break;
         case 40:
-            camera.position.y-=6;
+            camera.position.y-=8;
             break;
     }
 }
