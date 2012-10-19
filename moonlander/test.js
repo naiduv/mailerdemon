@@ -125,6 +125,8 @@ randfuncy = function(){
 window.onload = function() {
 	c = document.getElementById("myCanvas");
 	ctx = c.getContext("2d");
+	ctx.canvas.width  = window.innerWidth*0.97;
+	ctx.canvas.height  = window.innerHeight*0.97;
 
 	glander = new Lander();
 
